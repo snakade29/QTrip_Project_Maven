@@ -45,7 +45,7 @@ public class TestCases extends BaseClass {
 
     }
     
-    
+    //Shubham
     @Test(dataProvider = "TestCase2",dataProviderClass = CustomDataProvider.class ,description = "Verify Search and Filter flow  ",priority=2,groups={"Search and Filter flow"})
     public void TestCase02(  String CityName, String CategoryFilter, String DurationFilter,
             String expectedFilterResult, String expectedUnfilteredResult)
@@ -58,14 +58,14 @@ public class TestCases extends BaseClass {
          home.searchCity(CityNotPresent);
          Assert.assertTrue(home.verifyCityNotFound(), "No matches found is not displayed ");
          home.searchCity(CityName);
-         Thread.sleep(1000);
+         Thread.sleep(2000);
          Assert.assertTrue(home.assertAutoCompletetext(CityName), "Same city is not displayed");
-         Thread.sleep(1000);
+         Thread.sleep(2000);
          home.SelectCity(CityName);
          Thread.sleep(2000);
          AdventurePage adventurePage = new AdventurePage(driver);
          adventurePage.clearFilter();
-         Thread.sleep(1000);
+         Thread.sleep(2000);
          int expectedUnfilterCount = Integer.parseInt(expectedUnfilteredResult);
 
         Assert.assertEquals(adventurePage.getResultCount(), expectedUnfilterCount);
@@ -83,6 +83,44 @@ public class TestCases extends BaseClass {
 
 
     }
+    @Test(dataProvider = "TestCase3",dataProviderClass = CustomDataProvider.class ,description = "Verify Search and Filter flow  ",priority=2,groups={"Search and Filter flow"})
+    public void TestCase03(  String CityName, String CategoryFilter, String DurationFilter,
+            String expectedFilterResult, String expectedUnfilteredResult)
+            throws InterruptedException, MalformedURLException {
+
+        
+         String CityNotPresent = "Delhi"  ;
+         HomePage home = new HomePage(driver);
+         home.navigateToHomePage();
+         home.searchCity(CityNotPresent);
+         Assert.assertTrue(home.verifyCityNotFound(), "No matches found is not displayed ");
+         home.searchCity(CityName);
+         Thread.sleep(2000);
+         Assert.assertTrue(home.assertAutoCompletetext(CityName), "Same city is not displayed");
+         Thread.sleep(2000);
+         home.SelectCity(CityName);
+         Thread.sleep(2000);
+         AdventurePage adventurePage = new AdventurePage(driver);
+         adventurePage.clearFilter();
+         Thread.sleep(2000);
+         int expectedUnfilterCount = Integer.parseInt(expectedUnfilteredResult);
+
+        Assert.assertEquals(adventurePage.getResultCount(), expectedUnfilterCount);
+
+        adventurePage.setFilterValue(DurationFilter);
+
+        adventurePage.setCategoryValue(CategoryFilter);
+
+        int expectedFiltercount = Integer.parseInt(expectedFilterResult);
+      Assert.assertEquals(adventurePage.getResultCount(), expectedFiltercount);
+                
+
+        
+
+
+
+    }
+
 
 
 
