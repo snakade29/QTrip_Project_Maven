@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-14T16:44:16 IST" name="Default suite" finished-at="2024-07-14T16:44:34 IST" duration-ms="18398">
+    <groups>
+      <group name="Search and Filter flow">
+        <method signature="TestCases.TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" name="TestCase02" class="testCases.TestCases"/>
+      </group> <!-- Search and Filter flow -->
+    </groups>
+    <test started-at="2024-07-14T16:44:16 IST" name="Default test" finished-at="2024-07-14T16:44:34 IST" duration-ms="18398">
+      <class name="testCases.TestCases">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:17 IST" name="setupBrowser" finished-at="2024-07-14T16:44:21 IST" duration-ms="3930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:21 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-07-14T16:44:21 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration_Login -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:22 IST" name="closeBrowser" finished-at="2024-07-14T16:44:22 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:22 IST" name="setupBrowser" finished-at="2024-07-14T16:44:24 IST" duration-ms="1757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:24 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-07-14T16:44:24 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TESTUSER@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration_Login -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:24 IST" name="closeBrowser" finished-at="2024-07-14T16:44:25 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:25 IST" name="setupBrowser" finished-at="2024-07-14T16:44:26 IST" duration-ms="1507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:26 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-07-14T16:44:26 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123_USER_low@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QWERTY!!!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration_Login -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:27 IST" name="closeBrowser" finished-at="2024-07-14T16:44:27 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:27 IST" name="setupBrowser" finished-at="2024-07-14T16:44:29 IST" duration-ms="1568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:29 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-07-14T16:44:29 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cycling Routes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6-12 Hours]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:29 IST" name="closeBrowser" finished-at="2024-07-14T16:44:29 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:29 IST" name="setupBrowser" finished-at="2024-07-14T16:44:31 IST" duration-ms="1746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:31 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-07-14T16:44:31 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Singapore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hillside Getaways]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6-12 Hours]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:32 IST" name="closeBrowser" finished-at="2024-07-14T16:44:32 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:32 IST" name="setupBrowser" finished-at="2024-07-14T16:44:34 IST" duration-ms="1440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:34 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-07-14T16:44:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Goa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Party Spots]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2-6 Hours]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase02 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:34 IST" name="closeBrowser" finished-at="2024-07-14T16:44:34 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
