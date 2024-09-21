@@ -9,6 +9,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Reusable.Utility;
+
 public class HistoryPage {
 
 
@@ -43,6 +45,7 @@ public class HistoryPage {
     public boolean transactionId()
     {
         try {
+        	 Utility.WaitForVisibilityOfElement(driver, transactionID     );
             if(transactionID.isDisplayed())
                 return true ;
         } catch (Exception e) {
@@ -56,17 +59,16 @@ public class HistoryPage {
 
     public void  getReservations() throws InterruptedException, MalformedURLException
     {
-
+    	 Utility.WaitForVisibilityOfElement(driver, Reservation      );
          Reservation.click();
-        Thread.sleep(1000);
-//        SeleniumWrapper.click(Reservation);
-        Thread.sleep(5000);
-       // System.out.println(transactionID.getText());
+      
+ 
     }
 
 
     public void cancelreservation() throws MalformedURLException
     {
+    	 Utility.WaitForVisibilityOfElement(driver, Cancelreservation       );
            Cancelreservation.click();
 
        // SeleniumWrapper.click(Cancelreservation);
@@ -77,6 +79,7 @@ public class HistoryPage {
     public void clickonHome() throws MalformedURLException
     {
 
+   	 Utility.WaitForVisibilityOfElement(driver,   HomeBtn     );
         HomeBtn.click() ;
         //SeleniumWrapper.click(HomeBtn) ;
     }
@@ -85,7 +88,7 @@ public class HistoryPage {
 
     public  boolean verifyNumberofReservationCount()
     {
-
+    	 
         int size = numberOfReservation.size() ;
         System.out.println(size);
         if (size == 3)

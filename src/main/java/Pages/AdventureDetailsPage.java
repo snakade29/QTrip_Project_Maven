@@ -8,6 +8,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Reusable.Utility;
+
 public class AdventureDetailsPage {
 
      WebDriver driver ;
@@ -43,15 +45,15 @@ public class AdventureDetailsPage {
 
     public void bookAdventure ( String guestname ,String  date ,String count ) throws InterruptedException, MalformedURLException
     {
-
+    	 Utility.WaitForVisibilityOfElement(driver,   nameEle     );
            nameEle.sendKeys(guestname);
-
+           Utility.WaitForVisibilityOfElement(driver,  dateEle       );
            dateEle.sendKeys(date);
 
-
+           Utility.WaitForVisibilityOfElement(driver, countEle       );
            countEle.clear();
            countEle.sendKeys( count);
-
+           Utility.WaitForVisibilityOfElement(driver,  reserveBtn       );
            reserveBtn.click() ;
 
 //        SeleniumWrapper.sendKeys(nameEle,guestname );
@@ -69,7 +71,7 @@ public class AdventureDetailsPage {
     {
 
         try {
-
+        	Utility.WaitForVisibilityOfElement(driver,  reservation );
             if(reservation.isDisplayed())
                 return true ;
 

@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-14T16:44:16 IST" name="Default suite" finished-at="2024-07-14T16:44:34 IST" duration-ms="18398">
+  <suite started-at="2024-09-21T20:57:31 IST" name="Suite" finished-at="2024-09-21T21:08:18 IST" duration-ms="647592">
     <groups>
+      <group name="Booking and Cancellation Flow">
+        <method signature="TestCases.TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.TestCases@60856961]" name="TestCase03" class="testCases.TestCases"/>
+      </group> <!-- Booking and Cancellation Flow -->
+      <group name="Reliability Flow">
+        <method signature="TestCases.TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testCases.TestCases@60856961]" name="TestCase04" class="testCases.TestCases"/>
+      </group> <!-- Reliability Flow -->
       <group name="Search and Filter flow">
-        <method signature="TestCases.TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" name="TestCase02" class="testCases.TestCases"/>
+        <method signature="TestCases.TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@60856961]" name="TestCase02" class="testCases.TestCases"/>
       </group> <!-- Search and Filter flow -->
     </groups>
-    <test started-at="2024-07-14T16:44:16 IST" name="Default test" finished-at="2024-07-14T16:44:34 IST" duration-ms="18398">
+    <test started-at="2024-09-21T20:57:31 IST" name="Test" finished-at="2024-09-21T21:08:18 IST" duration-ms="647592">
       <class name="testCases.TestCases">
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:17 IST" name="setupBrowser" finished-at="2024-07-14T16:44:21 IST" duration-ms="3930" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:57:32 IST" name="setupBrowser" finished-at="2024-09-21T20:57:38 IST" duration-ms="6030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:21 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-07-14T16:44:21 IST" duration-ms="46" status="PASS">
+        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:57:38 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-09-21T20:57:59 IST" duration-ms="21503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +36,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration_Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:22 IST" name="closeBrowser" finished-at="2024-07-14T16:44:22 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:00 IST" name="closeBrowser" finished-at="2024-09-21T20:58:01 IST" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:22 IST" name="setupBrowser" finished-at="2024-07-14T16:44:24 IST" duration-ms="1757" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:01 IST" name="setupBrowser" finished-at="2024-09-21T20:58:05 IST" duration-ms="4956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:24 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-07-14T16:44:24 IST" duration-ms="2" status="PASS">
+        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:05 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-09-21T20:58:26 IST" duration-ms="20905" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,15 +60,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration_Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:24 IST" name="closeBrowser" finished-at="2024-07-14T16:44:25 IST" duration-ms="253" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:27 IST" name="closeBrowser" finished-at="2024-09-21T20:58:27 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:25 IST" name="setupBrowser" finished-at="2024-07-14T16:44:26 IST" duration-ms="1507" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:27 IST" name="setupBrowser" finished-at="2024-09-21T20:58:35 IST" duration-ms="7514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:26 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-07-14T16:44:26 IST" duration-ms="2" status="PASS">
+        <test-method signature="testRegistration_Login(java.lang.String,java.lang.String)[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:35 IST" name="testRegistration_Login" data-provider="loginDetails" finished-at="2024-09-21T20:58:56 IST" duration-ms="21099" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,15 +84,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration_Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:27 IST" name="closeBrowser" finished-at="2024-07-14T16:44:27 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:57 IST" name="closeBrowser" finished-at="2024-09-21T20:58:57 IST" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:27 IST" name="setupBrowser" finished-at="2024-07-14T16:44:29 IST" duration-ms="1568" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:58:57 IST" name="setupBrowser" finished-at="2024-09-21T20:59:04 IST" duration-ms="6739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:29 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-07-14T16:44:29 IST" duration-ms="4" status="PASS">
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:04 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-09-21T20:59:11 IST" duration-ms="6543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,15 +123,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:29 IST" name="closeBrowser" finished-at="2024-07-14T16:44:29 IST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:11 IST" name="closeBrowser" finished-at="2024-09-21T20:59:11 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:29 IST" name="setupBrowser" finished-at="2024-07-14T16:44:31 IST" duration-ms="1746" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:11 IST" name="setupBrowser" finished-at="2024-09-21T20:59:13 IST" duration-ms="1974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:31 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-07-14T16:44:31 IST" duration-ms="3" status="PASS">
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:13 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-09-21T20:59:19 IST" duration-ms="5827" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,15 +162,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:32 IST" name="closeBrowser" finished-at="2024-07-14T16:44:32 IST" duration-ms="253" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:19 IST" name="closeBrowser" finished-at="2024-09-21T20:59:19 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:32 IST" name="setupBrowser" finished-at="2024-07-14T16:44:34 IST" duration-ms="1440" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:19 IST" name="setupBrowser" finished-at="2024-09-21T20:59:22 IST" duration-ms="2592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:34 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-07-14T16:44:34 IST" duration-ms="1" status="PASS">
+        <test-method signature="TestCase02(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:22 IST" name="TestCase02" description="Verify Search and Filter flow  " data-provider="TestCase2" finished-at="2024-09-21T20:59:28 IST" duration-ms="6254" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,11 +201,417 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase02 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@66f57048]" started-at="2024-07-14T16:44:34 IST" name="closeBrowser" finished-at="2024-07-14T16:44:34 IST" duration-ms="275" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:28 IST" name="closeBrowser" finished-at="2024-09-21T20:59:28 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:29 IST" name="setupBrowser" finished-at="2024-09-21T20:59:32 IST" duration-ms="3892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:32 IST" name="TestCase03" description="verify Booking and Cancellation Flow" data-provider="TestCase3" finished-at="2024-09-21T20:59:56 IST" duration-ms="23196" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3_1@gmaill.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Niaboytown]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[palam]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[16-11-2025]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6f9b80f9ddb177d68642dcbf02ab222, clickElement {id=f.E015A94231B2331153357F3468F7BC4A.d.85D99A92526C2C88EA54C637209B48C0.e.77}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50935/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b6f9b80f9ddb177d68642dcbf02ab222)] -> xpath: //li[contains(text(),'Bengaluru')]]
+Session ID: b6f9b80f9ddb177d68642dcbf02ab222]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6f9b80f9ddb177d68642dcbf02ab222, clickElement {id=f.E015A94231B2331153357F3468F7BC4A.d.85D99A92526C2C88EA54C637209B48C0.e.77}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50935/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b6f9b80f9ddb177d68642dcbf02ab222)] -> xpath: //li[contains(text(),'Bengaluru')]]
+Session ID: b6f9b80f9ddb177d68642dcbf02ab222
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at Pages.HomePage.SelectCity(HomePage.java:152)
+at testCases.TestCases.TestCase03(TestCases.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:56 IST" name="closeBrowser" finished-at="2024-09-21T20:59:57 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:57 IST" name="setupBrowser" finished-at="2024-09-21T20:59:59 IST" duration-ms="2092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.TestCases@60856961]" started-at="2024-09-21T20:59:59 IST" name="TestCase03" description="verify Booking and Cancellation Flow" data-provider="TestCase3" finished-at="2024-09-21T21:01:24 IST" duration-ms="85360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3_2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Singapore]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Grand Ashland]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[biden]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[26-11-2025]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:01:24 IST" name="closeBrowser" finished-at="2024-09-21T21:01:25 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:01:25 IST" name="setupBrowser" finished-at="2024-09-21T21:01:26 IST" duration-ms="1742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase03(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:01:26 IST" name="TestCase03" description="verify Booking and Cancellation Flow" data-provider="TestCase3" finished-at="2024-09-21T21:02:51 IST" duration-ms="84718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC3_3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bangkok]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tifwales Ferry]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[prabhu]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[26-12-2025]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase03 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:02:51 IST" name="closeBrowser" finished-at="2024-09-21T21:02:52 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:02:52 IST" name="setupBrowser" finished-at="2024-09-21T21:03:08 IST" duration-ms="15910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:03:08 IST" name="TestCase04" description="Verify booking history can be viewed" data-provider="TestCase4" finished-at="2024-09-21T21:04:54 IST" duration-ms="106463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC4_1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bengaluru;Niaboytown;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kolkata;Thton;Cha Cha;01-02-2025;3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Malaysia;Wootkentree;Bom Bom;02-12-2025;1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:04:54 IST" name="closeBrowser" finished-at="2024-09-21T21:04:55 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:04:55 IST" name="setupBrowser" finished-at="2024-09-21T21:04:59 IST" duration-ms="4313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:04:59 IST" name="TestCase04" description="Verify booking history can be viewed" data-provider="TestCase4" finished-at="2024-09-21T21:06:24 IST" duration-ms="84728" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC4_2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bengaluru;Fort Sionnnn;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kolkata;North Gelgoon;Cha Cha;01-02-2025;3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Malaysia;Wootkentree;Lya;02-12-2025;1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":" //li[contains(text(),'Malaysia')]"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df99cde10c053e736571b6926a49f93a, findElement {using=xpath, value= //li[contains(text(),'Malaysia')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51160/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df99cde10c053e736571b6926a49f93a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":" //li[contains(text(),'Malaysia')]"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df99cde10c053e736571b6926a49f93a, findElement {using=xpath, value= //li[contains(text(),'Malaysia')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51160/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df99cde10c053e736571b6926a49f93a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at Pages.HomePage.assertAutoCompletetext(HomePage.java:120)
+at testCases.TestCases.TestCase04(TestCases.java:182)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:06:24 IST" name="closeBrowser" finished-at="2024-09-21T21:06:25 IST" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:06:25 IST" name="setupBrowser" finished-at="2024-09-21T21:06:31 IST" duration-ms="6261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="TestCase04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:06:31 IST" name="TestCase04" description="Verify booking history can be viewed" data-provider="TestCase4" finished-at="2024-09-21T21:08:18 IST" duration-ms="106486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC4_3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Goa;Perthby;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bengaluru;Niaboytown;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Bengaluru;Fort Sionnnn;Chicky;01-01-2025;2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase04 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.TestCases@60856961]" started-at="2024-09-21T21:08:18 IST" name="closeBrowser" finished-at="2024-09-21T21:08:18 IST" duration-ms="472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testCases.TestCases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -7,12 +7,14 @@ package Pages;
 import java.net.MalformedURLException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import Reusable.Utility;
 
 public class HomePage {
 
@@ -80,6 +82,7 @@ public class HomePage {
     }
 
     public void logoutUser() throws MalformedURLException {
+    	Utility.WaitForVisibilityOfElement(driver, LogoutBtn   );
          LogoutBtn.click();
       //  SeleniumWrapper.click(LogoutBtn);
 
@@ -88,18 +91,19 @@ public class HomePage {
 
     public void searchCity(String city) throws InterruptedException {
         
-         SearchBox.clear();
-          Thread.sleep(1000);
+    	 Utility.WaitForVisibilityOfElement(driver, SearchBox  );
+         SearchBox.clear(); 
+         Thread.sleep(1000);
+         Utility.WaitForVisibilityOfElement(driver, SearchBox  );  
          SearchBox.sendKeys(city);
-       // SeleniumWrapper.sendKeys(SearchBox , city ) ;
+       
 
     }
 
     public boolean verifyCityNotFound() throws InterruptedException
     {
         try {
-            Thread.sleep(1000);
-
+        	 Utility.WaitForVisibilityOfElement(driver,CityNotFound   );   
             if(CityNotFound.isDisplayed())
                 return true ;
         } catch ( Exception e) {
@@ -110,15 +114,30 @@ public class HomePage {
         return false ;
     }
 
-    public boolean assertAutoCompletetext(String city) {
+    public boolean assertAutoCompletetext(String city) throws InterruptedException {
 
-        String cityName =driver.findElement(By.xpath(" //li[contains(text(),'"+city+"')]")).getText();
+    	
+    	WebElement CityName = driver.findElement(By.xpath(" //li[contains(text(),'"+city+"')]"));
+    	 Utility.WaitForVisibilityOfElement(driver,  CityName);
+    	 try {
+    		    String cityName =  CityName.getText();
+    		    if(cityName.equalsIgnoreCase(city))
+    	            return true ;
+    	        else
+    	            return false  ;
+		} catch (StaleElementReferenceException e) {
+			// TODO: handle exception
+			WebElement CityName1 = driver.findElement(By.xpath(" //li[contains(text(),'"+city+"')]"));
+			String cityName =  CityName1.getText();
+		    if(cityName.equalsIgnoreCase(city))
+	            return true ;
+	        else
+	            return false  ;
+		}
+     
 
-
-        if(cityName.equalsIgnoreCase(city))
-            return true ;
-        else
-            return false  ;
+        
+      
 
 
 
@@ -129,7 +148,7 @@ public class HomePage {
     public void SelectCity(String city) throws MalformedURLException {
         WebElement City= driver.findElement(By.xpath("//li[contains(text(),'"+city+"')]"));
 
-
+        Utility.WaitForVisibilityOfElement(driver, City  );
         City.click();
        // SeleniumWrapper.click(City) ;
 

@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -205,6 +206,20 @@ public class Utility {
 		}
     	
     }
+    public void clickElementWithRetry(By locator, WebDriver driver) {
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                WebElement element = driver.findElement(locator);
+                element.click();
+                break;
+            } catch (StaleElementReferenceException e) {
+                attempts++;
+            }
+        }
+    }
+    
+    
 
 }
 

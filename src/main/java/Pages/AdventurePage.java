@@ -11,6 +11,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import Reusable.Utility;
+
 public class AdventurePage {
     WebDriver driver ;
 
@@ -44,11 +46,12 @@ public class AdventurePage {
 
     public void  setFilterValue(String value) throws InterruptedException, MalformedURLException
     {
-
+    	  Utility.WaitForVisibilityOfElement(driver,    clearbtnOfDurationFilter  );
          clearbtnOfDurationFilter.click();
        // SeleniumWrapper.click(clearbtnOfDurationFilter);
 
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
+        Utility.WaitForVisibilityOfElement(driver,dropdownElement );
         Select dropdown = new Select(dropdownElement);
 
         dropdown.selectByVisibleText(value);
@@ -58,11 +61,12 @@ public class AdventurePage {
 
     public void  setCategoryValue(String value) throws InterruptedException, MalformedURLException
     {
-
+    	Utility.WaitForVisibilityOfElement(driver,clearbtnOfCategoryFilter   );
         clearbtnOfCategoryFilter.click();
         //SeleniumWrapper.click( clearbtnOfCategoryFilter) ;
 
-        Thread.sleep(3000);
+       // Thread.sleep(3000);
+        Utility.WaitForVisibilityOfElement(driver, CategoryDropdown  );
         Select selectCategory = new Select(CategoryDropdown);
 
         selectCategory.selectByVisibleText(value);
@@ -71,12 +75,14 @@ public class AdventurePage {
     public void  clearFilter() throws InterruptedException, MalformedURLException
     {
 
-        Thread.sleep(1000);
+        
 
         // System.out.println( clearbtnOfDurationFilter.isDisplayed());
         // System.out.println( clearbtnOfDurationFilter.isEnabled());
+    	Utility.WaitForVisibilityOfElement(driver, clearbtnOfDurationFilter  );
          clearbtnOfDurationFilter.click();
-         Thread.sleep(1000);
+         
+         Utility.WaitForVisibilityOfElement(driver,  clearbtnOfCategoryFilter   );
          clearbtnOfCategoryFilter.click();
 
 //        SeleniumWrapper.click(clearbtnOfDurationFilter);
@@ -93,14 +99,15 @@ public class AdventurePage {
     }
     public void selectAdventure (String adventure) throws InterruptedException, MalformedURLException
     {
-
+    	 Utility.WaitForVisibilityOfElement(driver,clearbtnOfCategoryFilter    );
          clearbtnOfCategoryFilter.click();
+         Utility.WaitForVisibilityOfElement(driver, clearbtnOfDurationFilter   );
          clearbtnOfDurationFilter.click();
 //        SeleniumWrapper.click( clearbtnOfCategoryFilter);
 //        SeleniumWrapper.click(clearbtnOfDurationFilter);
-        Thread.sleep(2000);
+   
         WebElement adventureEle= driver.findElement(By.xpath("//h5[contains(text(),'"+adventure+"')]//ancestor::div[@class='col-6 col-lg-3 mb-4']"));
-        Thread.sleep(2000);
+        Utility.WaitForVisibilityOfElement(driver, adventureEle   );
         adventureEle.click();
 
        // SeleniumWrapper.click(adventureEle);

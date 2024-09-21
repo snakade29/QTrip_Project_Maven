@@ -5,8 +5,8 @@
     <classes>
       <class name="testCases.TestCases">
         <methods>
-          <include name="TestCase02" invocation-numbers="2"/>
           <include name="setupBrowser"/>
+          <include name="testRegistration_Login" invocation-numbers="0 0 1 1 2 2"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testCases.TestCases -->

@@ -12,10 +12,24 @@ public class CustomDataProvider {
     }
     
     @DataProvider(name = "TestCase2")
-	public static Object[][] getDataFrom() 
+	public static Object[][] getDataFrom2() 
 	{
 		Object[][] arr = ExcelReader.getDataFromSheet("TestCase02");
 		return arr;
 	}
+    
+    
+    @DataProvider(name = "TestCase3")
+   	public static Object[][] getDataFrom3() 
+   	{
+   		Object[][] arr = ExcelReader.getDataFromSheet("TestCase03");
+   		return arr;
+   	}
 
+    @DataProvider(name = "TestCase4")
+   	public static Object[][] getDataFrom4() 
+   	{
+   		Object[][] arr = ExcelReader.getDataFromSheet("TestCase04");
+   		return arr;
+   	}
 }
